@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@theme {
+  --color-cream: #fffdf2;
+  --color-brand: #0f2bff;
+  --color-ink: #1f2133;
+  --color-hand: #6e6e73;
+  --font-display: "Satoshi", sans-serif;
+  --font-hand: "Delicious Handrawn", cursive;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+}
